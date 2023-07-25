@@ -5,9 +5,9 @@ A  qr code encoder and decoder that first uses gzip, on the data field text and 
 
 QReeper is a pair of Rust applications that provide QR code data compression and decompression functionality. 
 
-The `qr_compressor` encodes and compresses given text data into QR codes in both Hex and Base64 encoding formats. 
+The `qreeper_encoder` encodes and compresses given text data into QR codes in both Hex and Base64 encoding formats. 
 
-The `qr_decompressor` is capable of decoding these QR codes and decompressing the data back into its original form.
+The `qreeper_decoder` is capable of decoding these QR codes and decompressing the data back into its original form.
 
 The applications use a GTK interface.
 
@@ -32,9 +32,9 @@ cd qreeper
 
 To use QReeper, you can run each program individually as follows:
 
-### QReeper_Compressor
+### QReeper_Encoder
 
-The QR Compressor encodes and compresses text data into QR codes. To use it, navigate to the `qr_compressor` directory and run the following command:
+Encodes and compresses text data into QR codes. To use it, navigate to the `qreeper_encoder` directory and run the following command:
 
 ```bash
 cargo run
@@ -42,9 +42,9 @@ cargo run
 
 This will launch the compressor application. You can enter your text data into the text field and click "Generate QR Codes" to create the QR codes. The compressed data will be shown in the application window and the generated QR codes will be saved as .png files in the same directory.
 
-### QReeper_Decompressor
+### QReeper_Decoder
 
-The QR Decompressor decodes and decompresses data from QR codes. To use it, navigate to the `qr_decompressor` directory and run the following command:
+Decodes and decompresses data from QR codes. To use it, navigate to the `qreeper_decoder` directory and run the following command:
 
 ```bash
 cargo run
