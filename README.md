@@ -1,8 +1,6 @@
 # qreeper
 A  qr code encoder and decoder that first uses gzip, on the data field text and then encodes a qr code with base64 and another qr code with hex.hex to generate qr codes
 
-# QReeper
-
 QReeper is a pair of Rust applications that provide QR code data compression and decompression functionality. 
 
 The `qreeper_encoder` encodes and compresses given text data into QR codes in both Hex and Base64 encoding formats. 
