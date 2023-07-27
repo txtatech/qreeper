@@ -50,6 +50,10 @@ cargo run
 
 This will launch the decompressor application. You can use the file chooser to select a QR code .png file and click "Decode QR Code" to decompress the data. The decompressed data will be shown in the application window.
 
+### NOTE:
+
+When encoding data as base64, it pads the data to a length that's a multiple of 4. If you are splitting base64 data into chunks, you need to make sure that each chunk (except possibly the last one) ends on a multiple of 4 characters. If you don't, the padding can be cut off, which can cause decoding to fail later on. So, whenever dealing with base64 data in chunks, it is important to keep this in mind.
+
 ## License
 
 This project uses the [MIT License](https://opensource.org/licenses/MIT).
